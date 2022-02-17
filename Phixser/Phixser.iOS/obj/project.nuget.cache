@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "dgSpecHash": "DhzNnJ8hX3Nz2/1KRYRz6s+zVLcKN/0tDDZUyjDJ04eTCkXktTPBhocWvWFl7uiQJUvrv1dQrUZCJwpuR7lutg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\oscar\\source\\repos\\77SportBar\\Phixser\\Phixser.iOS\\Phixser.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\oscar\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\oscar\\.nuget\\packages\\xamarin.forms\\4.8.0.1269\\xamarin.forms.4.8.0.1269.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Degradación del paquete detectada: Xamarin.Essentials de 1.7.1 a 1.5.3.2. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n Phixser.iOS -> Phixser -> Xamarin.Essentials (>= 1.7.1) \r\n Phixser.iOS -> Xamarin.Essentials (>= 1.5.3.2)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Degradación del paquete detectada: Xamarin.Forms de 5.0.0.2337 a 4.8.0.1269. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n Phixser.iOS -> Phixser -> Xamarin.Forms (>= 5.0.0.2337) \r\n Phixser.iOS -> Xamarin.Forms (>= 4.8.0.1269)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
+}

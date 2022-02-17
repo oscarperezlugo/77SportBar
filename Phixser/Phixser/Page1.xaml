@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Phixser.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid BackgroundColor="Black" Padding="0,18,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="9*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="1"/>
+                </Grid.ColumnDefinitions>
+                <BoxView BackgroundColor="Black" HeightRequest="35" VerticalOptions="Fill" HorizontalOptions="Fill" Grid.ColumnSpan="8"/>
+                <Image Source="psf1.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="8" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <WebView Source="https://www.toasttab.com/77-sport-bar/v3/" Grid.Column="0" Grid.ColumnSpan="8" Grid.Row="1" HeightRequest="1200"/>
+                <Button Text="&#xf5a0;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="#ffde59" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="MapClicked" BackgroundColor="Black"/>
+                <Button Text="&#xf07a;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="#ffde59" Grid.Row="2" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="ReviewClicked" BackgroundColor="Black"/>
+                <Button Text="&#xf274;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="#ffde59" Grid.Row="2" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="Center" Clicked="FormClicked" BackgroundColor="Black"/>
+                <Button Text="&#xf0c9;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="#ffde59" Grid.Row="2" Grid.Column="4" VerticalOptions="Center" HorizontalOptions="Center" Clicked="OpenWhatsApp" BackgroundColor="Black"/>
+                <Button Text="&#xf2a0;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="#ffde59" Grid.Row="2" Grid.Column="5" VerticalOptions="Center" HorizontalOptions="Center" Clicked="PhixserNumber" BackgroundColor="Black"/>
+                <Button Text="&#xf0c0;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="#ffde59" Grid.Row="2" Grid.Column="6" VerticalOptions="Center" HorizontalOptions="Center" Clicked="HubClicked" BackgroundColor="Black"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

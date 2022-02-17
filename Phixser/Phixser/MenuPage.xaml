@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Phixser.MenuPage">
+    <ContentPage.Content>
+        <StackLayout >
+            <Grid BackgroundColor="Black" Padding="0,18,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="9*"/>
+                    <RowDefinition Height="2.5*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2.5*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2.5*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="0.1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="sportbar.jpg" Grid.Row="1" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <!--<CarouselView ItemsSource="{Binding Monkeys}" Grid.Row="1" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout HorizontalOptions="FillAndExpand">
+                                <Image Source="{Binding ImageUrl}"
+                                Aspect="AspectFit"
+                                HorizontalOptions="FillAndExpand"
+                                       />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>-->
+                <BoxView BackgroundColor="Black" HeightRequest="55" VerticalOptions="Fill" HorizontalOptions="Fill" Grid.ColumnSpan="2"/>
+                <Image Source="psf1.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <!--<Image Source="icon.png"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="Start" HorizontalOptions="Center" HeightRequest="30"/>-->
+                <Image Source="FondoMenu.png" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="9" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <!--<ImageButton Source="map.png" Grid.Row="8" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="MapClicked" BackgroundColor="Red" />-->
+                <Button Text="&#xf5a0;" FontSize="20" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="White" Grid.Row="8" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="MapClicked" BackgroundColor="#ffde59" HeightRequest="70" CornerRadius="4"/>
+                <Button Text="&#xf07a;" FontSize="20" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="White" Grid.Row="8" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="ReviewClicked" BackgroundColor="#ffde59" HeightRequest="70" CornerRadius="4"/>
+                <Button Text="&#xf274;" FontSize="20" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="White" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="FormClicked" BackgroundColor="#ffde59" HeightRequest="70" CornerRadius="4" />
+                <Button Text="&#xf0c9;" FontSize="20" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="White" Grid.Row="5" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="OpenWhatsApp" BackgroundColor="#ffde59" HeightRequest="70" CornerRadius="4" />
+                <Button Text="&#xf2a0;" FontSize="20" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="White" Grid.Row="5" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="PhixserNumber" BackgroundColor="#ffde59" HeightRequest="70" CornerRadius="4" />
+                <Button Text="&#xf0c0;" FontSize="20" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="White" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="HubClicked" BackgroundColor="#ffde59" HeightRequest="70" CornerRadius="4" />
+                <!--<ImageButton Source="review.png" Grid.Row="8" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="ReviewClicked" BackgroundColor="Red" />
+                <ImageButton Source="calendar.png" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="FormClicked" BackgroundColor="Red" />
+                <ImageButton Source="chat.png" Grid.Row="5" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="OpenWhatsApp" BackgroundColor="Red" />
+                <ImageButton Source="llamada.png" Grid.Row="5" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="PhixserNumber" BackgroundColor="Red" />
+                <ImageButton Source="cuenta.png" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="HubClicked" BackgroundColor="Red" />-->
+                <Label Text="Here We Are" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" Grid.Column="0" Grid.Row="9" FontAttributes="Bold"/>
+                <Label Text="Order Online" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" Grid.Column="1" Grid.Row="9" FontAttributes="Bold"/>
+                <Label Text="Reservations" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" Grid.Column="0" Grid.Row="3" FontAttributes="Bold"/>
+                <Label Text="Menu" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" Grid.Column="1" Grid.Row="6" FontAttributes="Bold"/>
+                <Label Text="Call Us" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" Grid.Column="0" Grid.Row="6" FontAttributes="Bold"/>
+                <Label Text="Events And Updates" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" Grid.Column="1" Grid.Row="3" FontAttributes="Bold"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
